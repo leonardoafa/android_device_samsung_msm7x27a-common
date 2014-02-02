@@ -20,7 +20,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_PAGESIZE := 4096
-TARGET_KERNEL_SOURCE := kernel/samsung/msm7x27a
+TARGET_KERNEL_SOURCE := kernel/samsung/kyleopen
 
 ## Platform
 TARGET_ARCH := arm
@@ -65,7 +65,7 @@ USE_OPENGL_RENDERER := true
 TARGET_USES_QCOM_BSP := true
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
-BOARD_EGL_CFG := device/samsung/msm7x27a-common/prebuilt/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/samsung/kyleopen/prebuilt/lib/egl/egl.cfg
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP -DQCOM_NO_SECURE_PLAYBACK
 
 ## GPS
@@ -93,7 +93,7 @@ WIFI_DRIVER_MODULE_ARG := "suspend_mode=3 wow_mode=2 ath6kl_p2p=1 recovery_enabl
 
 ## RIL
 BOARD_USES_LEGACY_RIL := true
-BOARD_RIL_CLASS := ../../../device/samsung/msm7x27a-common/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/kyleopen/ril/
 
 ## Vold
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
@@ -109,16 +109,16 @@ TARGET_NO_INITLOGO := true
 ## Charging mode
 BOARD_LPM_BOOT_ARGUMENT_NAME := androidboot.boot_pause
 BOARD_LPM_BOOT_ARGUMENT_VALUE := batt
-BOARD_CHARGER_RES := device/samsung/msm7x27a-common/res/charger
+BOARD_CHARGER_RES := device/samsung/kyleopen/res/charger
 
 ## Use device specific modules
 TARGET_PROVIDES_LIBLIGHTS := true
 TARGET_PROVIDES_LIBAUDIO := true
 
 ## Recovery
-TARGET_RECOVERY_INITRC := device/samsung/msm7x27a-common/recovery/init.rc
-TARGET_RECOVERY_FSTAB := device/samsung/msm7x27a-common/recovery/recovery.fstab
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/msm7x27a-common/recovery/recovery_keys.c
+TARGET_RECOVERY_INITRC := device/samsung/kyleopen/recovery/init.rc
+TARGET_RECOVERY_FSTAB := device/samsung/kyleopen/recovery/recovery.fstab
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/kyleopen/recovery/recovery_keys.c
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_SDCARD_INTERNAL := true
