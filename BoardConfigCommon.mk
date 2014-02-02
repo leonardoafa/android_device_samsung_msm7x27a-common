@@ -31,7 +31,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT_CPU := cortex-a5
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/msm7x27a-common/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/kyleopen/include
 
 TARGET_GLOBAL_CFLAGS += -mtune=cortex-a5 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a5 -mfpu=neon -mfloat-abi=softfp
